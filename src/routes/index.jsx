@@ -5,12 +5,16 @@ import {
 } from "react-router-dom";
 import { Home } from "../pages/home";
 import { NotFound } from "../pages/404";
+import { AboutMe } from "../pages/aboutMe";
+import { Portfolio } from "../pages/portfolio";
 
 function RoutesApp() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/aboutMe" element={<AboutMe />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
