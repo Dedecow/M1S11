@@ -1,19 +1,21 @@
 import { useEffect, useState } from "react";
-import { Footer } from "../components/footer";
-import { Header } from "../components/header";
-import { Main } from "../components/main";
-import { api } from "../services/api";
-
+import { Footer } from "../../components/footer";
+import { Header } from "../../components/header";
+import { Main } from "../../components/main";
+import { api } from "../../services/api";
+import { useParams } from "react-router-dom";
 function Portfolio() {
   const [repos, setRepos] = useState([]);
 
+  const { login } = useParams()
+
   useEffect(() => {
     const load = async () => {
-      const response = await api.get("users/pedrohbsilva/repos");
+      const response = await api.get(`users/${login}/repos`);
       setRepos(response.data);
     };
     load();
-  }, []);
+  }, [login]);
 
   return (
     <>
