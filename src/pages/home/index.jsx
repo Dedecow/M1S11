@@ -3,8 +3,12 @@ import { Footer } from "../../components/footer";
 import { Main } from "../../components/main";
 import { api } from "../../services/api";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { HomeUlStyled, HomeLiStyled } from "./styled";
+import { 
+  HomeUlStyled, 
+  HomeLiStyled,
+  HomeImgStyled,
+  HomeLinkStyled
+ } from "./styled";
 
 function Home() {
   const [users, setUsers] = useState([]);
@@ -27,15 +31,15 @@ function Home() {
           {users.length > 0 &&
             users.map(({ login, avatar_url }) => {
               return (
-                <HomeLiStyled key={login}>
+                <HomeLiStyled key={login} className="li">
                   <p>{login}</p>
-                  <img
+                  <HomeImgStyled
+                    newImg={"defunkt" === login}
                     src={avatar_url}
-                    style={{ borderRadius: 90, width: 90 }}
                   />
-                  <Link to={`/portfolio/${login}`}>
+                  <HomeLinkStyled to={`/portfolio/${login}`}>
                     Venha ver meu portfolio
-                  </Link>
+                  </HomeLinkStyled>
                 </HomeLiStyled>
               );
             })}

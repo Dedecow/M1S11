@@ -1,8 +1,18 @@
-# React + Vite
+# Semana 11 - Front End React Vite - Consumo API Github
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Para saber mais sobre este projeto, favor consultar o arquivo, ENUNCIADO.MD, nele
+consta todas as informações necessárias sobre o objetivo do projeto.
 
-Currently, two official plugins are available:
+## Como configurar a aplicação
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Faça o clone da aplicação e via terminal, instale os pacotes do react utilizando
+o comando yarn ou npm install.
+
+Também é recomendável que baixe a extensão do VScode chamada ESLint para a
+configuração padrão do projeto, para facilitar o ambiente de desenvolvimento.
+
+Utilize o arquivo .env_example como base para criar um arquivo .env na aplicação
+
+# Como executar a aplicação no ambiente de desenvolvimento
+
+Após a etapa de configuração da aplicação, execute o comando npm run dev ou yarn dev
