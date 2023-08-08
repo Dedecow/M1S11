@@ -37,3 +37,5 @@ export const HomeLinkStyled = styled(Link)`
     opacity: 0.5;
   }
 `
+
+

@@ -27,6 +27,7 @@ function Home() {
       <Header />
       <Main>
         <p>Home</p>
+        
         <HomeUlStyled>
           {users.length > 0 &&
             users.map(({ login, avatar_url }) => {

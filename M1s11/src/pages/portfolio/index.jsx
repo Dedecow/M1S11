@@ -22,12 +22,14 @@ function Portfolio() {
       <Header />
       <Main>
         <p>Portfolio</p>
+        <a href="https://github.com/Dedecow?tab=repositories"> Meus Projetos</a>
         <ul>
           {repos.length > 0 &&
             repos.map(({ name, id }) => {
               return <li key={id}>{name}</li>;
             })}
         </ul>
+
       </Main>
       <Footer />
     </>

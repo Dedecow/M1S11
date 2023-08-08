@@ -8,5 +8,13 @@ export const GlobalStyles = createGlobalStyle`
   }
   body {
     margin:0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #root{
+    height: 100vh;
+    width: 100%;
   }
 `
